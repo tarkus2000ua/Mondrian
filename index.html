@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mosaic</title>
+  </head>
+  <body>
+    <div class="controls">
+      <div class="color-controls">
+        <div class="color-pickers">
+          <label class="grid-color-picker-wrap">
+            <input type="color" id="grid-color" value="#A5A5A5" />
+            Mosaic border color
+          </label>
+          <label class="color-picker-wrap">
+            <input type="color" id="fragment-color" value="#bbffbb" />
+            Fragment background color
+          </label>
+        </div>
+          <label class="color-lock-wrap">
+            <input type="checkbox" id="color-lock" checked />
+            Remember last fragment color
+          </label>
+      </div>
+      <div>
+        <label class="min-size-wrap">
+          <input type="number" id="min-size" value="10" />
+          Min. fragment size
+        </label>
+        <label class="max-fragments-wrap">
+          <input type="number" id="max-fragments" value="1000" />
+          Max. fragments
+        </label>
+      </div>
+      <button id="generate-btn">Generate new</button>
+    </div>
+    <div class="container" id="canvas"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
